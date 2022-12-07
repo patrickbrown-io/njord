@@ -1,15 +1,47 @@
-# 🚀 Getting started with Strapi
+# 🦀 Njörðr (Njord)
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+## What is Njord?
+
+Njord is a headless CMS powered by Strapi, Stripe, and Postgres ready to serve as your backend for web and mobile ecommerce applications.
+
+## Setup
+
+1. Run `yarn` (or `npm`) to install dependencies
+2. Create Postgres Database
+3. Create .env file
+
+## 2) Postgres Setup
+
+Run the following commands:
+
+```
+psql -U postgres
+create database <yourdbnamehere>
+```
+
+## 3) ENV
+
+See env.example for enviroment variables to configure Postgres database
+
+_backend/.env_
+
+```
+# POSTGRES
+DATABASE_HOST=tobemodified
+DATABASE_PORT= tobemodified
+DATABASE_NAME= tobemodified (yourdbnamehere from step 2)
+DATABASE_USERNAME= tobemodified
+DATABASE_PASSWORD=tobemodified
+```
 
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
 
 ```
-npm run develop
-# or
 yarn develop
+# or
+npm run develop
 ```
 
 ### `start`
@@ -17,9 +49,9 @@ yarn develop
 Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
 
 ```
-npm run start
-# or
 yarn start
+# or
+npm run start
 ```
 
 ### `build`
@@ -27,14 +59,18 @@ yarn start
 Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
 
 ```
-npm run build
-# or
 yarn build
+# or
+npm run build
 ```
 
 ## ⚙️ Deployment
 
 Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
+
+## What is Strapi?
+
+Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
 
 ## 📚 Learn more
 
