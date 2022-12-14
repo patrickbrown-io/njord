@@ -27,11 +27,15 @@ _backend/.env_
 
 ```
 # POSTGRES
-DATABASE_HOST=tobemodified
-DATABASE_PORT= tobemodified
-DATABASE_NAME= tobemodified (yourdbnamehere from step 2)
-DATABASE_USERNAME= tobemodified
-DATABASE_PASSWORD=tobemodified
+POSTGRES_HOST=tobemodified
+POSTGRES_PORT= tobemodified
+POSTGRES_NAME= tobemodified (yourdbnamehere from step 2)
+POSTGRES_USERNAME= tobemodified
+POSTGRES_PASSWORD=tobemodified
+
+# PG ADMIN
+PGADMIN_DEFAULT_EMAIL=tobemodifed
+PGADMIN_DEFAULT_PASSWORD=tobemodifed
 ```
 
 ### `develop`
@@ -87,7 +91,3 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 - [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
 - [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
 - [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
