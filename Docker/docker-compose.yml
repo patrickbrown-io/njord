@@ -1,7 +1,21 @@
+version: "1.0"
+name: 'njord'
 services:
-  db:
+  backend:
     container_name: backend
-    image: postgres:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    env_file:
+      - ../.env
+    ports:
+      - "1337"
+    volumes:
+      - "../:/app"
+  db:
+    container_name: db
+    image: postgres:alpine
     env_file:
       - ../.env
   #optional (specify default database instead of $POSTGRES_DB)

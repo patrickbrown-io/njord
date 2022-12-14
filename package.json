@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Njörðr - An ecommerce backend application",
   "scripts": {
-    "develop": "strapi develop",
+    "dev": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
@@ -17,12 +17,12 @@
     "docker:rebuild": "docker-compose -f ./Docker/docker-compose.yml up --force-recreate --build --no-start",
     "docker:clean": "docker-compose -f ./Docker/docker-compose.yml down --remove-orphans --rmi all"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-i18n": "4.5.3",
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/strapi": "4.5.3",
-    "pg": "^8.0.3"
+    "pg": "^8.0.3",
+    "sharp": "^0.31.2"
   },
   "author": {
     "name": "patrickbrown-io"
