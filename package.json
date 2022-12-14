@@ -7,7 +7,15 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "docker:up": "docker-compose -f ./Docker/docker-compose.yml up",
+    "docker:down": "docker-compose -f ./Docker/docker-compose.yml down",
+    "docker:logs": "docker-compose -f ./Docker/docker-compose.yml logs -f --tail 200",
+    "docker:start": "docker-compose -f ./Docker/docker-compose.yml start && yarn docker:logs",
+    "docker:stop": "docker-compose -f ./Docker/docker-compose.yml stop",
+    "docker:restart": "docker-compose -f ./Docker/docker-compose.yml restart",
+    "docker:rebuild": "docker-compose -f ./Docker/docker-compose.yml up --force-recreate --build --no-start",
+    "docker:clean": "docker-compose -f ./Docker/docker-compose.yml down --remove-orphans --rmi all"
   },
   "devDependencies": {},
   "dependencies": {
